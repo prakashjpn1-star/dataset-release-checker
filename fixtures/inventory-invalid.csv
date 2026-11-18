@@ -1,0 +1,5 @@
+equipment_id,name,quantity,location,active
+MIC-01,Microscope,2,,true
+MIC-01,Spare microscope,1,Lab A,false
+PUMP-01,   ,-1,Location longer than twenty characters,maybe
+SCOPE-01,Oscilloscope,,Lab B,true

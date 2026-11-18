@@ -1,0 +1,5 @@
+equipment_id,name,quantity,location,active
+MIC-01,"Microscope, shared",2,Lab A,true
+PUMP-01,"Pump
+with controller",1,,YES
+SCOPE-01,Oscilloscope,0,NULL,no

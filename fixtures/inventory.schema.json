@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "title": "Synthetic monthly equipment inventory",
+  "primary_key": ["equipment_id"],
+  "csv": {"allow_extra_columns": false},
+  "min_rows": 1,
+  "columns": [
+    {"name": "equipment_id", "type": "string", "required": true, "nullable": false},
+    {"name": "name", "type": "string", "required": true, "nullable": false,
+      "constraints": {"nonempty_after_trim": true}},
+    {"name": "quantity", "type": "integer", "required": true, "nullable": false,
+      "constraints": {"minimum": 0}},
+    {"name": "location", "type": "string", "required": true, "nullable": true,
+      "constraints": {"max_length": 20}},
+    {"name": "active", "type": "boolean", "required": true, "nullable": false,
+      "boolean": {"true_values": ["true", "yes"], "false_values": ["false", "no"], "case_sensitive": false}}
+  ]
+}

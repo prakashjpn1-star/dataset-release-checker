@@ -1,0 +1,3 @@
+recursive-include fixtures *.csv *.json
+recursive-include docs/specs *.md
+recursive-include tests *.py
